@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+// .footer {
+//     font: 16px $jaldi;
+//     margin-top: 16px;
+//     display: block;
+//     box-sizing: border-box;
+//     text-align: center;
+//     border-top: 1px solid #A9A9A9;
+//     bottom: 0;
+//     width: 100%;
+// }
+.footer--item {
+    display: inline-block;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+.footer {
+    font: 16px $jaldi;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #fff;
+    padding: 16px 16px;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    border-top: 1px solid #979797;
+}
+
+@media (max-width: 330px) {
+    .footer {
+        display: none;
+    }
+}
