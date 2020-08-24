@@ -31,7 +31,6 @@ const sharedModules = [
  * Module to include all angular material modules needed for this application
  *
  * @export
- * @class
  */
 
 @NgModule({
