@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-error-page',
@@ -8,13 +9,13 @@ import { Location } from '@angular/common';
 })
 export class ErrorPageComponent implements OnInit {
 
-  constructor(private _location: Location) { }
+  constructor(private _location: Location, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  back() {
-    this._location.back();
+  goBack(goingBack: boolean): void {
+    goingBack ? this._location.back() : this.router.navigate(['/home']);
   }
 
 }
