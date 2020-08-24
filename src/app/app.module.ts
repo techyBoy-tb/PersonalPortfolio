@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule } from './routing/app-routing.module';
 import { AppComponent } from './app.component';
+
+import { CustomAngularMaterialModule } from './shared/angular-material.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +14,13 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    CustomAngularMaterialModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
