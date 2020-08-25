@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { DialogExampleComponent } from '../dialog/dialog-example.component';
 
 @Component({
   selector: 'app-social',
@@ -8,15 +9,20 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class SocialComponent implements OnInit {
 
-  constructor() {}
+  constructor(public dialog: MatDialog) {}
+  openDialog() {
 
-  // openDialog() {
-  //   const dialogRef = this.dialog.open(DialogExampleDialog);
+    const dialogConfig = new MatDialogConfig();
 
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log(`Dialog result: ${result}`);
-  //   });
-  // }
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+    dialogConfig.data = {
+      whatSocial: 'LinkedIn',
+      imagesrc: '../../../assets/linkedin.svg'
+    };
+
+    this.dialog.open(DialogExampleComponent, dialogConfig);
+}
 
   ngOnInit(): void {
   }

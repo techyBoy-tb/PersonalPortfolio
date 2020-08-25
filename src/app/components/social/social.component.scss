@@ -1,11 +1,46 @@
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
 .example-header-image {
     background-image: url('../../../assets/linkedin.svg');
     background-size: cover;
-  }
+}
 
-  .container {
+// .container {
+//     max-width: none;
+//     justify-content: space-evenly;
+//     padding-top: 32px;
+// }
+// mat-card {
+//     box-shadow: 
+//     0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+//     0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+//     0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important
+// }
+
+// mat-card:hover {
+//     box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8) !important;
+// }
+  
+// .container {
+//     max-width: none;
+//     justify-content: space-evenly;
+//     padding-top: 32px;
+// }
+
+mat-card {
+    box-shadow: 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important
+}
+
+mat-card:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8) !important;
+}
+  
+.container {
     max-width: none;
     justify-content: space-evenly;
     padding-top: 32px;
 }
+

@@ -12,6 +12,7 @@ import { WavesModule } from 'angular-bootstrap-md';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const sharedModules = [
     WavesModule,
@@ -26,6 +27,7 @@ const sharedModules = [
     DragDropModule,
     MatExpansionModule,
     MatInputModule,
+    MatDialogModule
 ];
 /**
  * Module to include all angular material modules needed for this application
