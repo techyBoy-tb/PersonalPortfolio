@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SocialComponent } from './social.component';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
 
 describe('SocialComponent', () => {
   let component: SocialComponent;
@@ -8,6 +9,7 @@ describe('SocialComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ CustomAngularMaterialModule ],
       declarations: [ SocialComponent ]
     })
     .compileComponents();

@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ErrorPageComponent } from './error-page.component';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ErrorPageComponent', () => {
   let component: ErrorPageComponent;
@@ -8,6 +10,7 @@ describe('ErrorPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ RouterTestingModule, CustomAngularMaterialModule ],
       declarations: [ ErrorPageComponent ]
     })
     .compileComponents();

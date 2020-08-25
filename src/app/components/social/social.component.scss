@@ -3,3 +3,9 @@
     background-image: url('../../../assets/linkedin.svg');
     background-size: cover;
   }
+
+  .container {
+    max-width: none;
+    justify-content: space-evenly;
+    padding-top: 32px;
+}

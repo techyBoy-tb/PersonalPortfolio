@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class SocialComponent implements OnInit {
 
-  constructor(public dialog: MatDialog) {}
+  constructor() {}
 
   // openDialog() {
   //   const dialogRef = this.dialog.open(DialogExampleDialog);
