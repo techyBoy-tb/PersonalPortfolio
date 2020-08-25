@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorPageComponent } from './components/error-page/error-page.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { SocialComponent } from './components/social/social.component';
+import { LeavingDialogComponent } from './components/dialog/leaving-dialog.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { SocialComponent } from './components/social/social.component';
     ErrorPageComponent,
     ContactMeComponent,
     SocialComponent,
+    LeavingDialogComponent
   ],
   imports: [
     BrowserModule,
