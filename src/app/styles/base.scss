@@ -1,0 +1,187 @@
+.select-wrapper {
+    width: 100%;
+
+    select {
+        max-width: 100% !important;
+    }
+}
+
+input {
+    width: 100%;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: underline;
+    color: $red;
+
+    &:hover {
+        color: $red;
+    }
+}
+
+.body-title {
+    font: 16px $jaldi;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.body-error {
+    font: 16px $jaldi;
+    line-height: 16px;
+}
+
+.main-title {
+    margin: 32px 0;
+    text-align: center;
+
+    span {
+        font: 36px $open-sans;
+        font-weight: bold;
+
+        .red {
+            color: $red;
+        }
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    font: 36px $jaldi;
+    margin-bottom: 0px;
+}
+
+h2 {
+    font: 32px $jaldi;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font: 28px $jaldi;
+    margin-bottom: 0px;
+}
+
+h4 {
+    font: 24px $jaldi;
+    margin-bottom: 0px;
+}
+
+h5 {
+    font: 18px $jaldi;
+    margin-bottom: 0px;
+}
+
+.noCross::-ms-clear{
+    display: none;
+}
+
+@media (min-width: 750px) {
+    .txt::before {
+        margin-top: -10px;
+    }
+
+    div.form-box {
+        padding: 16px 16px 16px 24px;
+    }
+
+    .form-item.standard {
+        input,
+        select,
+        .select-wrapper,
+        textarea {
+            max-width: 36%;
+        }
+    }
+
+    .form-item.small {
+        input,
+        select,
+        .select-wrapper,
+        textarea {
+            max-width: 20%;
+        }
+    }
+
+    .form-item.option .title-selection .select-wrapper {
+        max-width: 94%;
+    }
+}
+
+.divider {
+    margin: 8px 0 0 0;
+}
+
+/**
+Card layout
+**/
+
+.mat-card {
+    // box-shadow: none !important;
+    font-family: $jaldi;
+    // overflow: hidden;
+}
+
+mat-card {
+    box-shadow: 
+    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important
+}
+
+mat-card:hover {
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8) !important;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex: auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    margin: 24px 4px 24px 16px;
+}
+
+.card-header {
+    text-align: center;
+    height: 50px;
+    background-color: #47464725;
+    margin: 4px;
+}
+
+.card-text {
+    margin-bottom: 24px;
+    font-size: 15px;
+}
+
+.card-body {
+    width: fit-content;
+    margin: 24px 16px 24px 16px;
+}
+  
+@media screen and (max-width: 650px) {
+    .container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .card {
+        margin: 8px 24px 16px 24px;
+        transition: none;
+    }
+
+    .card-body{
+        height: max-content;
+    }
+}

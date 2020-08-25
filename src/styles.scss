@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~bootstrap/dist/css/bootstrap.css";
+@import "./app/styles/variables.scss";
+@import "./app/styles/base.scss";
+
+body {
+  font: 16px $jaldi;
+}
+
+#body {
+  padding: 10px 10px 110px;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height:100%;
+}
+
+#container {
+  min-height:100%;
+  position: relative;
+}
+
+#body {
+  padding: 0px 10px 0px 10px;
+  padding-bottom: 164px;
+}
+
+@media (max-width: 750px) {
+  #body {
+    padding-bottom: 280px;
+  }
+}
+
+.main-container {
+  padding: 0 16px;
+}
+
+.title {
+  position: relative;
+  color: $dark;
+  font-weight: 300;
+  font-size: 62px;
+  padding-left: 0;
+  margin-left: 0;
+  padding: 110px 0;
+  background: $background;
+}
+
+.title:before,
+.title:after,
+.title>:first-child:before,
+.title>:first-child:after {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-color: $red;
+  border-style: solid;
+  content: '';
+}
+
+.title:before {
+  top: 40px;
+  left: 40px;
+  border-width: 12px 0 0 12px;
+}
+
+.title:after {
+  top: 40px;
+  right: 40px;
+  border-width: 12px 12px 0 0;
+}
+
+.title>:first-child:before {
+  bottom: 40px;
+  right: 40px;
+  border-width: 0 12px 12px 0;
+}
+
+.title>:first-child:after {
+  bottom: 40px;
+  left: 40px;
+  border-width: 0 0 12px 12px;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.hidden {
+  display: none;
+}

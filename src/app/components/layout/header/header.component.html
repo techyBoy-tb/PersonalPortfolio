@@ -1,0 +1,22 @@
+<mat-toolbar class="nav">
+    <!-- Mobile and small screen view -->
+    <div class="toggleMenu">
+      <button mat-icon-button (click)="onToggleSidenav()"[matMenuTriggerFor]="shortMenu">
+        <mat-icon>menu</mat-icon>
+      </button>
+        <mat-menu #shortMenu="matMenu" yPosition="below">
+          <button id="bioBtnSmall" mat-menu-item routerLink="/home" routerLinkActive="active">Home</button>
+          <button id="socialBtnSmall" mat-menu-item routerLink="/social" routerLinkActive="active">Social</button>
+          <button id="contactBtnSmall" mat-menu-item routerLink="/contact-me" routerLinkActive="active">Contact</button>
+        </mat-menu>
+    </div> 
+    <div class="spacer"></div>
+    <a routerLink="/home" id="homeLogo"><span class="logo">techyBoy</span></a>
+    <!-- Desktop View -->
+    <div class="navBtns" id="navbar">
+      <button id="bioBtn" mat-button routerLink="/home" routerLinkActive="active" class="menu-button">Home</button>
+      <button id="socialBtn" mat-button routerLink="/social" routerLinkActive="active" class="menu-button">Social</button>
+      <button id="contactBtn" mat-button routerLink="/contact-me" routerLinkActive="active" class="menu-button">Contact</button>
+    </div>
+  </mat-toolbar>
+  
