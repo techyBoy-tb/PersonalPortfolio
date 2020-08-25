@@ -10,7 +10,7 @@
     "preinstall": "npx npm-force-resolutions",
     "e2e": "ng e2e --no-webdriver-update",
     "test:match": "ng test -- -t",
-    "build-deploy": "ng build --prod --base-href=/"
+    "deploy": "firebase deploy --only hosting:gareth-clifford"
   },
   "private": true,
   "dependencies": {

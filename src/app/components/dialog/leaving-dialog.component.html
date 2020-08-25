@@ -1,0 +1,12 @@
+<h2 mat-dialog-title><img src="../../../assets/alert-outline.svg"> Caution</h2>
+<!-- <h2 mat-dialog-title><div class="example-header-image mat-card-avatar"></div> Caution</h2> -->
+<mat-dialog-content class="mat-typography">
+  <h3>You are about to be redireced to {{socialMedia}}. Are you sure you want to leave this site.</h3>
+  <p class="thing">
+    Note that when you leave this site we have no control on what other actions are involved.
+  </p>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Back to portfolio</button>
+  <button class="mat-raised-button" (click)="goToLink()">Take me to {{socialMedia}}</button>
+</mat-dialog-actions>
