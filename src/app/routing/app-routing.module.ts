@@ -4,25 +4,36 @@ import { HomeComponent } from '../components/home/home.component';
 import { ErrorPageComponent } from '../components/error-page/error-page.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
 import { SocialComponent } from '../components/social/social.component';
+import { AboutComponent } from '../components/about/about.component';
 
 export const routes: Routes = [
   {
-    path: 'error', component: ErrorPageComponent
+    path: 'error', component: ErrorPageComponent,
+    data: { animation: 'error'}
   },
   {
-    path: '', redirectTo: '/home', pathMatch: 'full'
+    path: '', redirectTo: '/home', pathMatch: 'full',
+    data: { animation: 'home'}
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'home', component: HomeComponent,
+    data: { animation: 'home'}
   },
   {
-    path: 'social', component: SocialComponent
+    path: 'social', component: SocialComponent,
+    data: { animation: 'social'}
   },
   {
-    path: 'contact-me', component: ContactMeComponent
+    path: 'contact-me', component: ContactMeComponent,
+    data: { animation: 'contact'}
   },
   {
-    path: '**', component: ErrorPageComponent
+    path: 'about', component: AboutComponent,
+    data: { animation: 'about'}
+  },
+  {
+    path: '**', component: ErrorPageComponent,
+    data: { animation: 'error'}
   }
 ];
 

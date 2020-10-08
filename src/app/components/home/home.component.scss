@@ -1,0 +1,148 @@
+
+
+@import '../../styles/variables.scss';
+
+.nav {
+    padding: 8px 16px;
+    display: block;
+    align-items: center;
+    background-color: #fff;
+    // box-shadow: 0px 3px 5px #474647;
+    text-align: center;
+}
+
+.logo {
+    font-family: $marckScript;
+    // font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #212529;
+    margin: 16px 0 16px 0px;
+    display: inline-block;
+}
+.logo2 {
+    margin-left: 2px;
+}
+
+.menu-button {
+    font-size: 14pt;
+    font-weight: 300;
+    margin-left: 4px;
+}
+
+/* --- Mobile view --- */
+.toggleMenu {
+    display: none; 
+}
+
+.spacer {
+    display: none;
+}
+
+.mat-toolbar-single-row {
+    height: 20%;
+}
+
+span {
+    white-space: pre-wrap;
+}
+.active {
+    text-decoration: underline;
+}
+* :focus {
+    outline: none !important;
+}
+@media screen and (max-width: 650px) {
+    .nav {
+        flex: 1;
+        flex-flow: row-reverse;
+        border-bottom: 1px solid #A9A9A9;
+    }
+
+    .toggleMenu {
+        display: block;
+        float: left;
+    }
+
+    .spacer {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    a {
+        vertical-align: text-top;
+    }
+
+    .logo {
+        align-self: flex-end;
+        text-align: left;
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .logo2 {
+        margin-left: 2px;
+    }
+
+    .mat-toolbar-single-row {
+        height: 60px;
+    }
+    .navBtns {
+        display: none;
+        border: none !important;
+    }
+}
+
+.navBtns {
+    // border-bottom: 1px solid #A9A9A9;
+    // border-top: 1px solid #A9A9A9;
+    padding: 8px 0 8px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 16px;
+    
+    button {
+        margin: 10px;
+        outline: inset;
+    }
+}
+
+
+
+.bg-img {
+    /* The image used */
+    background-image: url("../../../assets/code.png");
+  
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  
+    /* Full height */
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }

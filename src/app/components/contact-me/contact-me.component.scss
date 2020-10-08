@@ -1,0 +1,9 @@
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px 5px;
+    // @include adjust-for($phone) {
+    //     width: 100%
+    // }
+}

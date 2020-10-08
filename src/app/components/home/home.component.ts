@@ -12,4 +12,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // toggleScroll(id: string): void {
+  //   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  // }
 }

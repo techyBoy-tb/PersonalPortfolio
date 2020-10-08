@@ -21,7 +21,6 @@ export class LeavingDialogComponent implements OnInit {
         this.socialMedia = this.data['socialTitle'];
         this.socialURL = this.data['socialLink'];
         this.cd.detectChanges();
-        console.log('this.socialURL', this.socialURL);
     }
 
     goToLink() {

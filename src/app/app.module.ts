@@ -14,6 +14,7 @@ import { ErrorPageComponent } from './components/error-page/error-page.component
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { SocialComponent } from './components/social/social.component';
 import { LeavingDialogComponent } from './components/dialog/leaving-dialog.component';
+import { AboutComponent } from './components/about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LeavingDialogComponent } from './components/dialog/leaving-dialog.compo
     ErrorPageComponent,
     ContactMeComponent,
     SocialComponent,
-    LeavingDialogComponent
+    LeavingDialogComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
