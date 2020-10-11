@@ -1,3 +1,9 @@
+
+img {
+    border-radius: 200px;
+    width: 100%;
+}
+
 .gareth-avatar {
     background-image: url('../../../assets/garethAvatar.png');
     background-size: cover;
@@ -5,4 +11,37 @@
 
 .body {
     padding-top: 32px
+}
+
+.gareth {
+    text-align: center;
+    width: 400px !important;
+}
+
+.describe {
+    margin: 24px 48px 24px 48px;
+}
+
+.card {
+    flex: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+.techyBoy {
+    font-style: italic; 
+    font-weight: bold;
+}
+
+.skillList {
+    text-align: center;
+}
+ 
+@media screen and (max-width: 650px) {
+    .gareth {
+        text-align: center;
+        width: 250px !important;
+        height: auto;
+    }
 }

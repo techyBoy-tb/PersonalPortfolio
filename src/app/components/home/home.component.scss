@@ -7,13 +7,11 @@
     display: block;
     align-items: center;
     background-color: #fff;
-    // box-shadow: 0px 3px 5px #474647;
     text-align: center;
 }
 
 .logo {
     font-family: $marckScript;
-    // font-family: Roboto, "Helvetica Neue", sans-serif;
     font-size: 42px;
     font-weight: 600;
     color: #212529;
@@ -98,8 +96,6 @@ span {
 }
 
 .navBtns {
-    // border-bottom: 1px solid #A9A9A9;
-    // border-top: 1px solid #A9A9A9;
     padding: 8px 0 8px 0;
     display: flex;
     flex-flow: row wrap;

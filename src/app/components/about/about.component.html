@@ -1,23 +1,56 @@
-<div class="container">
-    <div class="body">
+<div id="container">
+    <app-header></app-header>
+    <div class="body" id="body">
         <h2>Get to know me!</h2>
-        <mat-card class="example-card">
-            <mat-card-header>
-                <div mat-card-avatar class="gareth-avatar"></div>
-                <mat-card-title>Gareth</mat-card-title>
-                <mat-card-subtitle>Sofware developer</mat-card-subtitle>
-            </mat-card-header>
-            <mat-card-content>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut scelerisque nunc. Donec dignissim nulla diam, eget consectetur quam porttitor et. Sed vel euismod elit. Nunc cursus vehicula ipsum, at tincidunt tellus congue et. Nunc velit quam, auctor vel nibh eget, eleifend eleifend est. Vestibulum pharetra erat ut aliquet convallis. Aenean et lorem porta, rhoncus est quis, consequat justo. Morbi a sodales urna. Integer orci tellus, volutpat et suscipit in, efficitur in mauris. In dignissim urna vel interdum eleifend. Aenean porta varius mi vel ultricies. Maecenas euismod, ante elementum dictum efficitur, ipsum enim aliquam tellus, placerat cursus purus massa at neque.
+        <div class="container">
 
-                    Maecenas blandit suscipit ex ornare aliquam. Quisque a congue mi, eu tincidunt augue. Donec commodo placerat arcu eget dictum. Proin feugiat egestas elementum. Quisque sed nisi nec diam fringilla lobortis. Sed porttitor ante at magna consequat aliquet. Curabitur luctus dolor eget velit fringilla, rhoncus gravida nulla tempus. Aenean a eros condimentum, gravida ante eu, lacinia odio. Duis non diam eget diam gravida efficitur. Donec eget arcu a libero commodo sodales. Integer lacinia et diam in pellentesque. Nullam tristique metus at ligula pellentesque, a vestibulum nunc semper. Pellentesque in mollis nibh, non condimentum quam. Cras non fringilla ex.
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>          
+            <mat-card class="card gareth">
+                <img src="../../../assets/garethAvatar.png">
+              </mat-card>
+            <mat-card class="card card-body describe">
+                <mat-card-header>
+                    <mat-card-title>Learn more about me</mat-card-title>
+                    <mat-card-subtitle>Sofware developer</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>
+                        So what can I say other than I love programming! I have made this portfolio to
+                        showcase my skills in Frontend development and some small glimpse of some
+                        DevOps work!
+                    </p>
+                    <p>
+                        I have a whole page dedicated to projects that I have worked on, although not 
+                        very long at the moment, it is ever growing! I have started building my own 
+                        apps and websites and releasing them under the name
+                        <span class="techyBoy">techyBoy</span>.
+                        
+                        I'm not much of a designer, but my skills lie in other areas, such as:
+                    </p>
+                    <p class="skillList">
+                        ● Java ● Spring ● Kotling ● HTML5 ● CSS3 ● Angular ● TypeScript ● Jenkins
+                        ● Openshift ● GitLab ● Github ● Firebase ● PostgreSQL ● 
+                    </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>Spring</li>
+                        <li>Kotlin</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>Jenkins</li>
+                        <li>Openshift</li>
+                        <li>GitLab</li>
+                        <li>GitHub</li>
+                        <li>Firebase</li>
+                    </ul>
+                </mat-card-content>
+                <!-- <mat-card-actions>
+                    <button mat-button>LIKE</button>
+                    <button mat-button>SHARE</button>
+                </mat-card-actions> -->
+            </mat-card>
+        </div>
     </div>
+    <app-footer></app-footer>          
 </div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { SOCIAL_MEDIA_LIST } from 'src/app/model/enum/consts.enum';
-import { LeavingDialogComponent } from '../dialog/leaving-dialog.component';
+import { LeavingDialogComponent } from '../common/dialog/leaving-dialog.component';
 
 @Component({
   selector: 'app-social',

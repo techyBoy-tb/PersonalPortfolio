@@ -7,14 +7,14 @@ import { AppRoutingModule } from './routing/app-routing.module';
 import { AppComponent } from './app.component';
 
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
-import { HeaderComponent } from './components/layout/header/header.component';
-import { FooterComponent } from './components/layout/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
-import { ErrorPageComponent } from './components/error-page/error-page.component';
+import { ErrorPageComponent } from './components/common/error-page/error-page.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { SocialComponent } from './components/social/social.component';
-import { LeavingDialogComponent } from './components/dialog/leaving-dialog.component';
+import { LeavingDialogComponent } from './components/common/dialog/leaving-dialog.component';
 import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/common/layout/footer/footer.component';
+import { HeaderComponent } from './components/common/layout/header/header.component';
 
 @NgModule({
   declarations: [

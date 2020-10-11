@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from '../components/home/home.component';
-import { ErrorPageComponent } from '../components/error-page/error-page.component';
+import { ErrorPageComponent } from '../components/common/error-page/error-page.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
 import { SocialComponent } from '../components/social/social.component';
 import { AboutComponent } from '../components/about/about.component';
