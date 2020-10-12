@@ -7,6 +7,8 @@ body {
 
 main {
   height: 100vh;
+  background-color: black !important;
+  color: wheat;
 }
 
 #body {
@@ -27,6 +29,8 @@ body {
 #container {
   min-height: 100%;
   position: relative;
+  background-color: black;
+  color: wheat;
 }
 
 #body {
