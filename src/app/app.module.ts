@@ -15,6 +15,8 @@ import { LeavingDialogComponent } from './components/common/dialog/leaving-dialo
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/common/layout/footer/footer.component';
 import { HeaderComponent } from './components/common/layout/header/header.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -26,14 +28,16 @@ import { HeaderComponent } from './components/common/layout/header/header.compon
     ContactMeComponent,
     SocialComponent,
     LeavingDialogComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    CustomAngularMaterialModule
+    CustomAngularMaterialModule,
+    MatCarouselModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],

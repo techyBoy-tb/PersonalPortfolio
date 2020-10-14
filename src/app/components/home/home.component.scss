@@ -67,10 +67,6 @@ span {
         flex: 1 1 auto;
     }
 
-    .menu-button {
-        display: none;
-    }
-
     a {
         vertical-align: text-top;
     }
@@ -88,10 +84,6 @@ span {
 
     .mat-toolbar-single-row {
         height: 60px;
-    }
-    .navBtns {
-        display: none;
-        border: none !important;
     }
 }
 
@@ -130,7 +122,7 @@ span {
   .bg-text {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: wheat;
+    color: white;
     font-weight: bold;
     border: 3px solid wheat;
     position: absolute;

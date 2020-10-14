@@ -7,8 +7,8 @@ body {
 
 main {
   height: 100vh;
-  background-color: black !important;
-  color: wheat;
+  background-image: url("/assets/techyBoy.png") !important;
+  color: white;
 }
 
 #body {
@@ -29,8 +29,9 @@ body {
 #container {
   min-height: 100%;
   position: relative;
-  background-color: black;
-  color: wheat;
+  // background-color: black;
+  background-image: url("/assets/techyBoy.png");
+  color: white;
 }
 
 #body {

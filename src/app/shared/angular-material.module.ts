@@ -27,7 +27,7 @@ const sharedModules = [
     DragDropModule,
     MatExpansionModule,
     MatInputModule,
-    MatDialogModule
+    MatDialogModule,
 ];
 /**
  * Module to include all angular material modules needed for this application

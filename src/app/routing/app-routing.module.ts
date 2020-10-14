@@ -5,6 +5,7 @@ import { ErrorPageComponent } from '../components/common/error-page/error-page.c
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
 import { SocialComponent } from '../components/social/social.component';
 import { AboutComponent } from '../components/about/about.component';
+import { ProjectsComponent } from '../components/projects/projects.component';
 
 export const routes: Routes = [
   {
@@ -30,6 +31,10 @@ export const routes: Routes = [
   {
     path: 'about', component: AboutComponent,
     data: { animation: 'about'}
+  },
+  {
+    path: 'projects', component: ProjectsComponent,
+    data: { animation: 'projects'}
   },
   {
     path: '**', component: ErrorPageComponent,

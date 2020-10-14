@@ -3,7 +3,9 @@ img {
     border-radius: 200px;
     width: 150%;
 }
-
+ h2 {
+     text-align: center;
+ }
 .gareth-avatar {
     background-image: url('../../../assets/garethAvatar.png');
     background-size: cover;
@@ -36,9 +38,11 @@ img {
 }
 
 .skillList {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
- 
+
 @media screen and (max-width: 650px) {
     .gareth {
         text-align: center;

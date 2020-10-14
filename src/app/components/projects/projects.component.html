@@ -1,0 +1,30 @@
+<div id="container">
+    <app-header></app-header>
+    <div class="body" id="body">
+        <h2>Let's take a look at what I can do</h2>
+        
+<div id="demo" class="carousel slide proje" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li *ngFor="let slide of slides; let i = index" [class.active]="i == 0" data-target="#demo" [attr.data-slide-to]="i"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner" >
+      <div class="carousel-item proj-img" *ngFor="let slide of slides; let i=index" [class.active]="i == 0">
+        <img src={{slide.image}} />
+     </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>  
+    </div>
+    <app-footer></app-footer>
+</div>

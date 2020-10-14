@@ -13,8 +13,9 @@ input {
 .container {
     max-width: 900px;
     margin: 0 auto;
-    background-color: black !important;
-    color: wheat;
+    // background-color: black !important;
+    background-image: url("src/assets/techyBoy.png");
+    color: white;
 }
 
 a {
@@ -137,8 +138,8 @@ mat-card {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
     transition: all 1s ease-in-out !important;
     -webkit-transition: all 1s ease-in-out !important;
-    background-color: black !important;
-    color: wheat !important;
+    background: transparent !important;
+    color: white !important;
 }
 
 mat-card:hover {
@@ -164,7 +165,7 @@ mat-card:hover {
 .card-header {
     text-align: center;
     height: 50px;
-    background-color: #47464725;
+    background-image: url("src/assets/techyBoy.png");
     margin: 4px;
 }
 
@@ -174,7 +175,6 @@ mat-card:hover {
 }
 
 .card-body {
-    width: fit-content;
     margin: 24px 16px 24px 16px;
 }
   
@@ -190,7 +190,6 @@ mat-card:hover {
 
     .card {
         margin: 8px 24px 16px 24px;
-        // transition: none;
         transition: all 1s ease-in-out !important;
         -webkit-transition: all 1s ease-in-out !important;
     }
@@ -198,4 +197,8 @@ mat-card:hover {
     .card-body{
         height: max-content;
     }
+}
+
+.mat-card-subtitle {
+    color: sandybrown;
 }
