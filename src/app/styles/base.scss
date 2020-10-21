@@ -14,7 +14,7 @@ input {
     max-width: 900px;
     margin: 0 auto;
     // background-color: black !important;
-    background-image: url("src/assets/techyBoy.png");
+    // background-image: url("src/assets/techyBoy.png");
     color: white;
 }
 
@@ -165,7 +165,7 @@ mat-card:hover {
 .card-header {
     text-align: center;
     height: 50px;
-    background-image: url("src/assets/techyBoy.png");
+    // background-image: url("src/assets/techyBoy.png");
     margin: 4px;
 }
 
@@ -202,4 +202,15 @@ mat-card:hover {
 
 .mat-card-subtitle {
     color: sandybrown;
+}
+
+.mat-dialog-container {
+    background-color: gray;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .body, .nav {
+      -webkit-backdrop-filter: blur(1px);
+      backdrop-filter: blur(1px);
+    }
 }

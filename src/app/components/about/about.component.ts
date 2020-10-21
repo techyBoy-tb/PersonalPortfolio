@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SKILLS_LIST } from 'src/app/model/enum/skill-list.enum';
 
 @Component({
   selector: 'app-about',
@@ -9,7 +10,7 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
-  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  skillList: Array<Object> = SKILLS_LIST;
 
   ngOnInit(): void {
   }

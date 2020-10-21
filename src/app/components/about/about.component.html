@@ -5,7 +5,7 @@
         <div class="container">
             <mat-card class="card gareth">
                 <img src="../../../assets/garethAvatar-removebg-preview.png">
-              </mat-card>
+            </mat-card>
             <mat-card class="card card-body describe">
                 <mat-card-header>
                     <mat-card-title>Gareth Clifford, thats me</mat-card-title>
@@ -25,39 +25,9 @@
                         
                         I'm not much of a designer, but my skills lie in other areas, such as:
                     </p>
-                    <!-- <mat-selection-list #shoes [multiple]="false"class="list-horizontal">
-                        <mat-list-option *ngFor="let shoe of typesOfShoes" [value]="shoe">
-                          {{shoe}}
-                        </mat-list-option>
-                      </mat-selection-list> -->
-                    <!-- <div class ="skillList"> -->
-                        <ul class="thing">
-                            <li>Java</li>
-                            <li>Spring</li>
-                            <li>Kotlin</li>
-                            <li>Maven</li>
-                            <li>NPM</li>
-                            <li>Conlfuence & Jira</li>
-                            <li>CSS3</li>
-                            <li>Angular</li>
-                            <li>TypeScript</li>
-                            <li>Jenkins</li>
-                            <li>Kibana</li>
-                            <li>Adobe Analytics</li>
-                            <li>Openshift</li>
-                            <li>GitLab</li>
-                            <li>GitHub</li>
-                            <li>Firebase</li>
-                            <li>Gradle</li>
-                            <li>XML</li>
-                            <li>PostgreSQL</li>
-                            <li>CI/CD</li>
-                            <li>REST API</li>
-                            <li>NodeJS</li>
-                            <li>Dynatrace</li>
-                            <li>TDD & BDD</li>
-                        </ul>
-                    <!-- </div> -->
+                    <ul class="list">
+                        <li *ngFor="let skill of skillList" value="skill">{{skill}}</li>
+                    </ul>
                     <p>
                         To see more of what I can do checkout out my projects!
                     </p>
