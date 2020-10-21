@@ -204,10 +204,6 @@ mat-card:hover {
     color: sandybrown;
 }
 
-.mat-dialog-container {
-    background-color: gray;
-}
-
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .body, .nav {
       -webkit-backdrop-filter: blur(1px);
