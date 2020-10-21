@@ -9,6 +9,8 @@ export class AboutComponent implements OnInit {
 
   constructor() { }
 
+  typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+
   ngOnInit(): void {
   }
 

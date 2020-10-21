@@ -17,6 +17,7 @@ import { FooterComponent } from './components/common/layout/footer/footer.compon
 import { HeaderComponent } from './components/common/layout/header/header.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { MatCarouselModule } from '@ngbmodule/material-carousel';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MatCarouselModule } from '@ngbmodule/material-carousel';
     SocialComponent,
     LeavingDialogComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

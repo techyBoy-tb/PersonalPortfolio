@@ -6,6 +6,7 @@ import { ContactMeComponent } from '../components/contact-me/contact-me.componen
 import { SocialComponent } from '../components/social/social.component';
 import { AboutComponent } from '../components/about/about.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
+import { CarouselComponent } from '../components/carousel/carousel.component';
 
 export const routes: Routes = [
   {
@@ -31,6 +32,10 @@ export const routes: Routes = [
   {
     path: 'about', component: AboutComponent,
     data: { animation: 'about'}
+  },
+  {
+    path: 'carousel', component: CarouselComponent,
+    data: { animation: 'carousel'}
   },
   {
     path: 'projects', component: ProjectsComponent,
