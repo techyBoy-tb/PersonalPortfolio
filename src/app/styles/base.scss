@@ -204,6 +204,9 @@ mat-card:hover {
     color: sandybrown;
 }
 
+h2 {
+    text-align: center;
+}
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .body, .nav {
       -webkit-backdrop-filter: blur(1px);

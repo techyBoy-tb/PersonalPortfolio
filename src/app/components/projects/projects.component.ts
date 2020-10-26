@@ -1,22 +1,41 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component } from '@angular/core';
+import { SKILLS_LIST } from 'src/app/model/enum/skill-list.enum';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
 
   constructor() { }
-  slides = [
-    {'image': 'assets/code2.png'},
-    {'image': 'assets/garethAvatar.png'},
-    {'image': 'assets/github.svg'},
-    {'image': 'assets/code.png'},
-    {'image': 'assets/linkedin.svg'}
+
+  skillList: Array<Object> = SKILLS_LIST;
+  taxCalcImages = [
+    {
+      name: 'Image one',
+      source: '../../../assets/taxCalc/deductionDonut.png'
+    },
+    {
+      name: 'Image two',
+      source: '../../../assets/taxCalc/deductionBreakdown.png'
+    },
+    {
+      name: 'Image three',
+      source: '../../../assets/taxCalc/student.png'
+    },
+    {
+      name: 'Image Four',
+      source: '../../../assets/taxCalc/oldStudent.png'
+    }
   ];
-
-
-  ngOnInit(): void {
-  }
+  codeImages = [
+    {
+      name: 'Image one',
+      source: '../../../assets/code.png'
+    },
+    {
+      name: 'Image two',
+      source: '../../../assets/code2.png'
+    },
+  ];
 }

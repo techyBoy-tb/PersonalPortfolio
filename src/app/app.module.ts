@@ -40,6 +40,7 @@ import { LeavingDialogComponent } from './components/common/dialog/leaving-dialo
     FlexLayoutModule,
     CustomAngularMaterialModule,
     MatCarouselModule.forRoot()
+
   ],
   entryComponents: [
     LeavingDialogComponent

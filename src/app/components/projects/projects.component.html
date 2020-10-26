@@ -2,29 +2,68 @@
     <app-header></app-header>
     <div class="body" id="body">
         <h2>Let's take a look at what I can do</h2>
-        
-<div id="demo" class="carousel slide proje" data-ride="carousel">
-
-    <!-- Indicators -->
-    <ul class="carousel-indicators">
-      <li *ngFor="let slide of slides; let i = index" [class.active]="i == 0" data-target="#demo" [attr.data-slide-to]="i"></li>
-    </ul>
-    
-    <!-- The slideshow -->
-    <div class="carousel-inner" >
-      <div class="carousel-item proj-img" *ngFor="let slide of slides; let i=index" [class.active]="i == 0">
-        <img src={{slide.image}} />
-     </div>
-    </div>
-    
-    <!-- Left and right controls -->
-    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </a>
-    <a class="carousel-control-next" href="#demo" data-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </a>
-  </div>  
+        <div class="container">
+          <mat-card class="card">
+            <mat-card-content>
+              <div id="projectOneCarousel" >
+                <app-carousel [title]="'Project one'" [images]="taxCalcImages"></app-carousel>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lectus nec 
+                dolor vehicula pretium. Praesent ac egestas ligula. Ut vitae pharetra augue. Mauris 
+                consectetur elementum leo eget ultricies. Nullam sed urna cursus, lacinia velit sit 
+                amet, finibus massa. Vestibulum posuere massa tempor dignissim hendrerit. Morbi ut 
+                augue sem. Nam accumsan lacinia nibh in efficitur. Etiam mollis suscipit tortor eu 
+                venenatis. Suspendisse nec mattis orci. Maecenas maximus, lacus eget tempor 
+                venenatis, diam orci interdum nulla, et gravida nunc sapien eu ipsum. In a nisi vel 
+                dolor tempor aliquet varius vitae risus. Vestibulum ex erat, varius at nulla eget, 
+                congue iaculis urna. Aenean rhoncus nibh eget egestas rutrum.
+              </p>
+              <p>
+                Integer eget feugiat neque, id hendrerit enim. Pellentesque faucibus laoreet tellus 
+                ac vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada 
+                fames ac turpis egestas. Curabitur rutrum gravida erat, sed finibus sapien auctor 
+                in. Maecenas id neque scelerisque, varius tellus at, malesuada justo. Nam ornare 
+                porta neque, sed facilisis nunc dictum in. Sed hendrerit lacus quam, ac vehicula 
+                eros malesuada sed. Sed luctus arcu at neque porta ultricies. Donec vulputate urna 
+                sed ipsum tincidunt, sed volutpat libero consequat. Cras sit amet nulla ac leo 
+                viverra vulputate nec at ipsum. Donec augue dolor, maximus at eros vel, imperdiet 
+                placerat leo. In quis nisl tempus, sodales ligula faucibus, tempus risus. Sed 
+                pharetra massa non fringilla semper. Etiam leo eros, rutrum sit amet eros non, 
+                placerat cursus arcu. Suspendisse laoreet, diam in porta tempor, erat justo porta 
+                erat, sit amet consectetur ex quam vel ipsum.
+              </p>
+            </mat-card-content>
+          </mat-card>
+          
+          <mat-card class="card">
+            <mat-card-content>
+              <div id="projectOneCarousel">
+                <app-carousel [title]="'Project two'" [images]="codeImages"></app-carousel>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique leo 
+                vitae sollicitudin varius. Vestibulum quis velit gravida, euismod leo vulputate, 
+                placerat neque. Nunc dui nisl, facilisis ut fringilla vitae, mollis nec est. Orci 
+                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Nullam et viverra leo, eget sodales justo. Proin vitae egestas enim. Nulla lectus 
+                nibh, efficitur consequat bibendum a, fermentum non dui. Proin malesuada 
+                pellentesque ullamcorper. Interdum et malesuada fames ac ante ipsum primis in 
+                faucibus. Nulla facilisi.
+              </p>
+              <p>
+                Nulla non rhoncus tellus. Suspendisse potenti. Aenean molestie ex at nibh ullamcorper, 
+                vitae faucibus nisl ornare. Donec enim ex, finibus tempus accumsan eu, accumsan 
+                ultrices leo. Pellentesque ornare, augue tempor rhoncus consequat, nisi erat mollis 
+                lacus, ut viverra risus nulla vitae massa. Quisque pretium consectetur semper. Etiam 
+                ultrices, dui eu bibendum vehicula, dolor lectus hendrerit quam, nec venenatis neque 
+                eros at urna. Fusce vitae massa sit amet sem viverra ullamcorper sit amet vitae velit. 
+                Donec sed arcu in ipsum varius mollis. Donec efficitur pretium diam eu lobortis. 
+                Quisque semper diam id est tempus lobortis vitae a nisl.
+              </p>
+            </mat-card-content>
+          </mat-card>
+        </div>
     </div>
     <app-footer></app-footer>
 </div>
