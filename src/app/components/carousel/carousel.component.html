@@ -1,7 +1,8 @@
-<div class="slideshow-container" id="{{name}}" >
-  <h2>{{title}}</h2>
-  <div *ngFor="let image of images" class="mySlides fade">
-    <img src="{{image.source}}">
+<div class="slideshow-container" id="{{name}}">
+  <div #myImages>
+    <div *ngFor="let image of images" class="mySlides fade">
+      <img src="{{image.source}}">
+    </div>
   </div>
 
   <!-- Next and previous buttons -->
@@ -11,6 +12,6 @@
 <br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" *ngFor="let image of images; let index = index" (click)="currentSlide(index + 1)"></span>
+<div #dots style="text-align:center">
+  <span *ngFor="let image of images; let index = index" class="dot" (click)="currentSlide(index + 1)"></span>
 </div>

@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component, Input, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 import { ListCode } from 'src/app/model/list-code.model';
 
 let uniqueId = 0;
@@ -10,7 +10,8 @@ let uniqueId = 0;
 export class CarouselComponent implements OnInit, AfterViewInit {
 
   @Input() images: Array<ListCode>;
-  @Input() title = 'No title provided';
+  @ViewChild('myImages', { static: false }) myImages: ElementRef;
+  @ViewChild('dots', { static: false }) dots: ElementRef;
   slideIndex = 1;
   name: string;
 
@@ -38,8 +39,8 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   showSlides(n) {
     let i;
-    const slides = document.getElementsByClassName('mySlides') as any;
-    const dots = document.getElementsByClassName('dot');
+    const slides = this.myImages.nativeElement.children;
+    const dots = this.dots.nativeElement.children;
     if (n > slides.length) { this.slideIndex = 1; }
     if (n < 1) { this.slideIndex = slides.length; }
     for (i = 0; i < slides.length; i++) {

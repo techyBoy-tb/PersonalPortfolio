@@ -3,10 +3,16 @@
     <div class="body" id="body">
         <h2>Let's take a look at what I can do</h2>
         <div class="container">
-          <mat-card class="card">
+          <mat-card class="card describe">
+            <mat-card-title>
+              Project One
+            </mat-card-title>
+            <mat-card-subtitle>
+              Personal project
+            </mat-card-subtitle>
             <mat-card-content>
-              <div id="projectOneCarousel" >
-                <app-carousel [title]="'Project one'" [images]="taxCalcImages"></app-carousel>
+              <div id="projectOneCarousel" class="carousel">
+                <app-carousel [images]="taxCalcImages"></app-carousel>
               </div>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lectus nec 
@@ -36,9 +42,15 @@
             </mat-card-content>
           </mat-card>
           
-          <mat-card class="card">
+          <mat-card class="card describe">
+            <mat-card-title>
+              Project Two
+            </mat-card-title>
+            <mat-card-subtitle>
+              Professional project
+            </mat-card-subtitle>
             <mat-card-content>
-              <div id="projectOneCarousel">
+              <div id="projectTwoCarousel" class="carousel">
                 <app-carousel [title]="'Project two'" [images]="codeImages"></app-carousel>
               </div>
               <p>

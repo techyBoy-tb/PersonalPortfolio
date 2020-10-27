@@ -14,11 +14,12 @@ img {
 
 .gareth {
     text-align: center;
-    width: 40%;
+    width: 50%;
 }
 
 .describe {
     margin: 24px 48px 24px 48px;
+    width: 100%;
 }
 
 .card {
@@ -32,12 +33,6 @@ img {
     font-style: italic; 
     font-weight: bold;
 }
-
-// .skillList {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-// }
 
 @media screen and (max-width: 650px) {
     .gareth {
