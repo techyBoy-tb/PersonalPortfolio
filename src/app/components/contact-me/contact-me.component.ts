@@ -12,4 +12,8 @@ export class ContactMeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  submit(): void {
+    window.alert(`Thank you for your email. \nI will be in touch soon.`);
+  }
+
 }

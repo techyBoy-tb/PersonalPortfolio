@@ -2,27 +2,20 @@
     <app-header></app-header>
     <div class="body" id="body">
         <h2>Contact me</h2>
-        <mat-card class="card-body">
-            <mat-card-header>
-                <!-- <div mat-card-avatar class="example-header-image"></div> -->
-                <mat-card-title>Want to know more? Get in touch!</mat-card-title>
-                <!-- <mat-card-subtitle>Sofware developer</mat-card-subtitle> -->
-            </mat-card-header>
-            <!-- <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu"> -->
-            
-            <mat-card-content class="column">
-                <mat-form-field id="subject">
-                    <input matInput aria-label="Subject" placeholder="Subject" />
-                </mat-form-field>
-                <mat-form-field id="message">
-                    <input matInput aria-label="Message" placeholder="Message" />
-                </mat-form-field>
-            </mat-card-content>
-            <mat-card-actions>
-                <button mat-button>LIKE</button>
-                <button mat-button>SHARE</button>
-            </mat-card-actions>
-        </mat-card>          
+        <div class="container">
+            <mat-card class="card-body describe">
+                <mat-card-header>
+                    <mat-card-title>Want to know more? Get in touch!</mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content class="column">
+                    <app-input [label]="'Name'" [typeOfInput]="'input'"></app-input>
+                    <app-input [label]="'Email address'" [typeOfInput]="'input'"></app-input>
+                    <app-input [label]="'Message'" [typeOfInput]="'text-area'"></app-input>
+                </mat-card-content>
+
+                <button mat-flat-button color="primary" (click)="submit()">Primary</button>
+            </mat-card>
+        </div>
+        <app-footer></app-footer>
     </div>
-    <app-footer></app-footer>
-</div>

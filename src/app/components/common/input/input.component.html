@@ -1,0 +1,11 @@
+<div *ngIf="typeOfInput === 'input'" class="input-group">
+  <input type="text" required>
+  <span class="highlight"></span>
+  <label>{{label}}</label>
+</div>
+
+<div *ngIf="typeOfInput === 'text-area'" class="input-group">
+  <textarea type="text" rows="4" required></textarea>
+  <span class="highlight"></span>
+  <label>{{label}}</label>
+</div>
