@@ -1,0 +1,18 @@
+<div class="row">
+  <img src="{{statusUrl}}">
+  <h2 mat-dialog-title>{{status}}</h2>
+</div>
+<mat-dialog-content class="mat-typography">
+  <div *ngIf="success">
+    <h3>Thank you for your email. I am to get back to you as quick as I can.</h3>
+    <p>This may take up to 5 working days.</p>
+  </div>
+  <div *ngIf="failure">
+    <h3>Something has gone wrong...</h3>
+    <p>Please try again later. If the problem persists please let me know at <a href="mailto:{{email}}">{{email}}</a>
+    </p>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="mat-raised-button" (click)="close()">Close</button>
+</mat-dialog-actions>

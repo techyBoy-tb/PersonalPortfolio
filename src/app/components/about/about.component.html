@@ -1,14 +1,17 @@
 <div id="container">
     <app-header></app-header>
     <div class="body" id="body">
-        <h2>This is me!</h2>
+        <!-- Change title to something intersting i.e. classic sayings or the same as the header -->
+        <!-- Try and look for some other fonts -->
+        <h2>I am unapologetically myself</h2>
         <div class="container">
             <mat-card class="card gareth">
                 <img src="../../../assets/garethAvatar-removebg-preview.png">
             </mat-card>
             <mat-card class="card card-body describe">
+                <!-- Align mat-card-header with mat-card-content -->
                 <mat-card-header>
-                    <mat-card-title>Gareth Clifford, thats me</mat-card-title>
+                    <mat-card-title>Gareth Clifford, that's me</mat-card-title>
                     <mat-card-subtitle>Sofware developer</mat-card-subtitle>
                 </mat-card-header>
                 <mat-card-content>
@@ -18,14 +21,15 @@
                         DevOps work!
                     </p>
                     <p>
-                        I have a whole page dedicated to projects that I have worked on, although not 
-                        very long at the moment, it is ever growing! I have started building my own 
+                        I have a whole page dedicated to projects that I have worked on, although not
+                        very long at the moment, it is ever growing! I have started building my own
                         apps and websites and releasing them under the name
                         <span class="techyBoy">techyBoy</span>.
-                        
+
                         I'm not much of a designer, but my skills lie in other areas, such as:
                     </p>
                     <ul class="list">
+                        <!-- Change to something like chips, or ticks or something other than normal bullet points -->
                         <li *ngFor="let skill of skillList" value="skill">{{skill}}</li>
                     </ul>
                     <p>
@@ -35,5 +39,5 @@
             </mat-card>
         </div>
     </div>
-    <app-footer></app-footer>          
+    <app-footer></app-footer>
 </div>

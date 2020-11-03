@@ -79,3 +79,8 @@ mat-selection-list.list-horizontal {
     display: flex;
     flex-direction: row;
 }
+
+ul {
+    // list-style-type: square;
+    list-style-image: url('src/assets/done-white-18dp.svg');
+}

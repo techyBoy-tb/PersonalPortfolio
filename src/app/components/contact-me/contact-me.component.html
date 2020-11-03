@@ -14,8 +14,18 @@
                     <app-input [label]="'Message'" [typeOfInput]="'text-area'"></app-input>
                 </mat-card-content>
 
-                <button mat-flat-button color="primary" (click)="submit()">Primary</button>
+                <button mat-flat-button color="primary" (click)="submitPass()">Success</button>
+                <button mat-flat-button color="primary" (click)="submitFail()">Failure</button>
             </mat-card>
+        </div>
+        <div *ngIf="loading" class="submit-modal">
+            <div class="s-card">
+                <h1 tabindex="0" class="s-card--title">We're {{process}} your request</h1>
+                <span class="spinner"></span>
+                <p tabindex="0" class="body-title">Your details can take up to 30 seconds to process</p>
+                <p tabindex="0">Depending on your internet connection it may take longer. Don't close this window or
+                    refresh</p>
+            </div>
         </div>
         <app-footer></app-footer>
     </div>
