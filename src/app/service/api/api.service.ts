@@ -16,7 +16,6 @@ export class ApiService {
   constructor(private http: HttpClient) {
     this.http.get(this.configUrl)
       .subscribe(data => {
-        console.log(data);
         this.config = data;
       });
   }
@@ -68,7 +67,6 @@ export class ApiService {
   }
 
   private get requestOptions() {
-    console.log('this.config', this.config);
     const headers = {
       'Client-Id': this.config['client-id']
     };

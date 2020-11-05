@@ -1,6 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCarouselModule } from '@ngbmodule/material-carousel';
@@ -18,7 +19,10 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SocialComponent } from './components/social/social.component';
 import { AppRoutingModule } from './routing/app-routing.module';
+import { ApiService } from './service/api/api.service';
+import { FormService } from './service/form/form.service';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
+import { TrackErrorDirective } from './track-error.directive';
 
 @NgModule({
   declarations: [
@@ -34,7 +38,8 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
     ProjectsComponent,
     CarouselComponent,
     InputComponent,
-    StatusDialogComponent
+    StatusDialogComponent,
+    TrackErrorDirective
   ],
   imports: [
     BrowserModule,
@@ -43,14 +48,18 @@ import { CustomAngularMaterialModule } from './shared/angular-material.module';
     HttpClientModule,
     FlexLayoutModule,
     CustomAngularMaterialModule,
-    MatCarouselModule.forRoot()
-
+    MatCarouselModule.forRoot(),
+    ReactiveFormsModule
   ],
   entryComponents: [
     LeavingDialogComponent,
     StatusDialogComponent
   ],
-  providers: [],
+  providers: [
+    FormBuilder,
+    ApiService,
+    FormService
+  ],
   bootstrap: [AppComponent],
   schemas: [NO_ERRORS_SCHEMA]
 })

@@ -128,3 +128,27 @@ body {
   background: #555;
   border-radius: 10px;
 }
+
+// .error-box {
+
+//   & input,
+//   & textarea {
+//     border-color: red !important;
+//     background-color: transparent !important;
+//     &:focus {
+//       border-color: #4285f4;
+//     }
+
+//     & .errorDirective_error,
+//     & .error {
+//       display: block !important;
+//     }
+//   }
+// }
+
+// .errorDirective_error,
+// .error {
+//   font-weight: normal;
+//   color: red;
+//   display: none;
+// }

@@ -1,81 +1,56 @@
 <div id="container">
-    <app-header></app-header>
-    <div class="body" id="body">
-        <h2>Let's take a look at what I can do</h2>
-        <div class="container">
-          <mat-card class="card describe">
-            <mat-card-title>
-              Project One
-            </mat-card-title>
-            <mat-card-subtitle>
-              Personal project
-            </mat-card-subtitle>
-            <mat-card-content>
-              <div id="projectOneCarousel" class="carousel">
-                <app-carousel [images]="taxCalcImages"></app-carousel>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis lectus nec 
-                dolor vehicula pretium. Praesent ac egestas ligula. Ut vitae pharetra augue. Mauris 
-                consectetur elementum leo eget ultricies. Nullam sed urna cursus, lacinia velit sit 
-                amet, finibus massa. Vestibulum posuere massa tempor dignissim hendrerit. Morbi ut 
-                augue sem. Nam accumsan lacinia nibh in efficitur. Etiam mollis suscipit tortor eu 
-                venenatis. Suspendisse nec mattis orci. Maecenas maximus, lacus eget tempor 
-                venenatis, diam orci interdum nulla, et gravida nunc sapien eu ipsum. In a nisi vel 
-                dolor tempor aliquet varius vitae risus. Vestibulum ex erat, varius at nulla eget, 
-                congue iaculis urna. Aenean rhoncus nibh eget egestas rutrum.
-              </p>
-              <p>
-                Integer eget feugiat neque, id hendrerit enim. Pellentesque faucibus laoreet tellus 
-                ac vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada 
-                fames ac turpis egestas. Curabitur rutrum gravida erat, sed finibus sapien auctor 
-                in. Maecenas id neque scelerisque, varius tellus at, malesuada justo. Nam ornare 
-                porta neque, sed facilisis nunc dictum in. Sed hendrerit lacus quam, ac vehicula 
-                eros malesuada sed. Sed luctus arcu at neque porta ultricies. Donec vulputate urna 
-                sed ipsum tincidunt, sed volutpat libero consequat. Cras sit amet nulla ac leo 
-                viverra vulputate nec at ipsum. Donec augue dolor, maximus at eros vel, imperdiet 
-                placerat leo. In quis nisl tempus, sodales ligula faucibus, tempus risus. Sed 
-                pharetra massa non fringilla semper. Etiam leo eros, rutrum sit amet eros non, 
-                placerat cursus arcu. Suspendisse laoreet, diam in porta tempor, erat justo porta 
-                erat, sit amet consectetur ex quam vel ipsum.
-              </p>
-            </mat-card-content>
-          </mat-card>
-          
-          <mat-card class="card describe">
-            <mat-card-title>
-              Project Two
-            </mat-card-title>
-            <mat-card-subtitle>
-              Professional project
-            </mat-card-subtitle>
-            <mat-card-content>
-              <div id="projectTwoCarousel" class="carousel">
-                <app-carousel [title]="'Project two'" [images]="codeImages"></app-carousel>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique leo 
-                vitae sollicitudin varius. Vestibulum quis velit gravida, euismod leo vulputate, 
-                placerat neque. Nunc dui nisl, facilisis ut fringilla vitae, mollis nec est. Orci 
-                varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
-                Nullam et viverra leo, eget sodales justo. Proin vitae egestas enim. Nulla lectus 
-                nibh, efficitur consequat bibendum a, fermentum non dui. Proin malesuada 
-                pellentesque ullamcorper. Interdum et malesuada fames ac ante ipsum primis in 
-                faucibus. Nulla facilisi.
-              </p>
-              <p>
-                Nulla non rhoncus tellus. Suspendisse potenti. Aenean molestie ex at nibh ullamcorper, 
-                vitae faucibus nisl ornare. Donec enim ex, finibus tempus accumsan eu, accumsan 
-                ultrices leo. Pellentesque ornare, augue tempor rhoncus consequat, nisi erat mollis 
-                lacus, ut viverra risus nulla vitae massa. Quisque pretium consectetur semper. Etiam 
-                ultrices, dui eu bibendum vehicula, dolor lectus hendrerit quam, nec venenatis neque 
-                eros at urna. Fusce vitae massa sit amet sem viverra ullamcorper sit amet vitae velit. 
-                Donec sed arcu in ipsum varius mollis. Donec efficitur pretium diam eu lobortis. 
-                Quisque semper diam id est tempus lobortis vitae a nisl.
-              </p>
-            </mat-card-content>
-          </mat-card>
-        </div>
+  <app-header></app-header>
+  <div class="body" id="body">
+    <h2>Let's take a look at what I can do</h2>
+    <div class="container">
+      <mat-card class="card describe">
+        <mat-card-title>
+          Project One
+        </mat-card-title>
+        <mat-card-subtitle>
+          Personal project
+        </mat-card-subtitle>
+        <mat-card-content>
+          <div id="projectOneCarousel" class="carousel">
+            <app-carousel [images]="taxCalcImages"></app-carousel>
+          </div>
+          <p>
+            Recently I have been trying my hand in app development, I have created an app called
+            the Tax Calculator. I decided to use Kotlin and Android Studio as it is based of Java
+            so was able to quickly grasp the concepts. Once fully completed, it will be published
+            to the Google Play store, available for download on Android devices. The purpose of
+            the app is to calculate your tax and national insurance based on your annual income
+            by using in app calculations with no external APIs. There are additional options
+            such as student loans, pension contributions and overtime or bonus. An additional
+            feature is a save and retrieve option, in which the user will be given a randomly
+            generated alphanumeric code in which they are able to input this code and retrieve
+            the details they had previously entered. I have achieved this by using the Firebase
+            Realtime Database.
+          </p>
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="card describe">
+        <mat-card-title>
+          Project Two
+        </mat-card-title>
+        <mat-card-subtitle>
+          Professional project
+        </mat-card-subtitle>
+        <mat-card-content>
+          <div id="projectTwoCarousel" class="carousel">
+            <app-carousel [title]="'Project two'" [images]="siteImages"></app-carousel>
+          </div>
+          <p>
+            I am currently creating a website in which to host my personal portfolio where I can
+            further my skills as a developer while showcasing my abilities in a digestible format.
+            I am creating this portfolio using the frontend framework Angular, for the backend
+            services I am using NodeJS, and I am using Firebase to host. I have created this to
+            apply the skills I have learnt to a different environment.
+          </p>
+        </mat-card-content>
+      </mat-card>
     </div>
-    <app-footer></app-footer>
+  </div>
+  <app-footer></app-footer>
 </div>

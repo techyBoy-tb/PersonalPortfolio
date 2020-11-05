@@ -28,14 +28,34 @@ export class ProjectsComponent {
       source: '../../../assets/taxCalc/oldStudent.png'
     }
   ];
-  codeImages = [
+  siteImages = [
     {
       name: 'Image one',
-      source: '../../../assets/code.png'
+      source: '../../../assets/portfolio/about.png'
     },
     {
       name: 'Image two',
-      source: '../../../assets/code2.png'
+      source: '../../../assets/portfolio/projects.png'
+    },
+    {
+      name: 'Image three',
+      source: '../../../assets/portfolio/social.png'
+    },
+    {
+      name: 'Image four',
+      source: '../../../assets/portfolio/home.png'
+    },
+    {
+      name: 'Image five',
+      source: '../../../assets/portfolio/contact.png'
+    },
+    {
+      name: 'Image six',
+      source: '../../../assets/portfolio/contact2.png'
+    },
+    {
+      name: 'Image seven',
+      source: '../../../assets/portfolio/contact3.png'
     },
   ];
 }

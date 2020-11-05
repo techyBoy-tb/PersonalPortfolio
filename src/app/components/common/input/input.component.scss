@@ -15,11 +15,11 @@ input, textarea {
   border: 1px solid #9bc3d3;
   font: 13px $jaldi;
   color: white;
+  line-height: 40px;
 }
 
 input {
   height: 40px;
-  line-height: 40px;
 }
 
 input:focus, textarea:focus {
@@ -47,4 +47,38 @@ textarea:valid ~ label {
   top: -25px;
   font-size: 14px;
   color: #4285f4;
+}
+
+
+
+.error-box {
+
+  & input,
+  & textarea {
+    border-color: red !important;
+    background-color: transparent !important;
+    margin-bottom: -16px;
+    &:focus {
+      border-color: #4285f4;
+    }
+
+    & .errorDirective_error,
+    & .error {
+      display: block !important;
+    }
+  }
+  & input:focus ~ label,
+  & input:valid ~ label,
+  & textarea:focus ~ label,
+  & textarea:valid ~ label {
+     color: red;
+  }
+}
+
+.errorDirective_error,
+.error {
+  font-weight: normal;
+  color: red;
+  // display: none;
+  position: inherit;
 }

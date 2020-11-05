@@ -8,14 +8,20 @@
                     <mat-card-title>Want to know more? Get in touch!</mat-card-title>
                 </mat-card-header>
 
-                <mat-card-content class="column">
-                    <app-input [label]="'Name'" [typeOfInput]="'input'"></app-input>
-                    <app-input [label]="'Email address'" [typeOfInput]="'input'"></app-input>
-                    <app-input [label]="'Message'" [typeOfInput]="'text-area'"></app-input>
-                </mat-card-content>
+                <form [formGroup]="contactDetails">
+                    <mat-card-content class="column">
+                        <app-input [label]="'Name'" [typeOfInput]="'input'" [control]="contactDetails.get('name')">
+                        </app-input>
+                        <app-input [label]="'Email address'" [typeOfInput]="'input'"
+                            [control]="contactDetails.get('emailAddress')"></app-input>
+                        <app-input [label]="'Subject'" [typeOfInput]="'input'"
+                            [control]="contactDetails.get('subject')"></app-input>
+                        <app-input [label]="'Message'" [typeOfInput]="'text-area'"
+                            [control]="contactDetails.get('emailBody')"></app-input>
+                    </mat-card-content>
+                </form>
 
-                <button mat-flat-button color="primary" (click)="submitPass()">Success</button>
-                <button mat-flat-button color="primary" (click)="submitFail()">Failure</button>
+                <button mat-flat-button color="primary" id="submit" (click)="submit()">Submit</button>
             </mat-card>
         </div>
         <div *ngIf="loading" class="submit-modal">

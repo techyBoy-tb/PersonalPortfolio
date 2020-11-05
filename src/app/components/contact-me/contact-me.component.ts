@@ -1,7 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ApiService } from 'src/app/service/api/api.service';
+import { FormService } from 'src/app/service/form/form.service';
 import { StatusDialogComponent } from '../common/status-dialog/status-dialog.component';
 
 @Component({
@@ -9,7 +11,7 @@ import { StatusDialogComponent } from '../common/status-dialog/status-dialog.com
   templateUrl: './contact-me.component.html',
   styleUrls: ['./contact-me.component.scss']
 })
-export class ContactMeComponent implements OnInit {
+export class ContactMeComponent implements OnInit, AfterViewInit {
 
   public loading = false;
   public process: string;
@@ -20,29 +22,27 @@ export class ContactMeComponent implements OnInit {
     { name: 'Success', url: '../../../assets/icons8-double-tick-48.png' },
     { name: 'Failure', url: '../../../assets/icons8-speak-no-evil-monkey-48.png' },
   ];
+  public contactDetails: FormGroup = this.formService.getContactDetails();
 
+  public message = {};
 
-  constructor(public apiService: ApiService, public dialog: MatDialog) { }
+  constructor(public apiService: ApiService, public dialog: MatDialog, private formService: FormService) { }
 
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void {
+    this.contactDetails.markAsUntouched();
+  }
+
   submit() {
     console.log('Submit has been called');
-    // this.loading = true;
-    // this.process = this.processes.submit;
-
-    // this.apiService.submitEmail(this.createObject()).subscribe(() => {
-    // this.loading = false;
-    this.openDialog('Failure');
-    // }, this.handleError);
-  }
-
-  submitPass() {
-    this.openDialog('Success');
-  }
-  submitFail() {
-    this.openDialog('Failure');
+    this.loading = true;
+    this.process = this.processes.submit;
+    this.apiService.submitEmail(this.createObject()).subscribe(() => {
+      this.loading = false;
+      this.openDialog('Success');
+    }, this.handleError);
   }
 
   openDialog(status: string) {
@@ -59,18 +59,19 @@ export class ContactMeComponent implements OnInit {
 
   createObject(): Object {
     const messageBody = {
-      from: 'tomking9219@gmail.com',
-      name: 'Tom King',
-      subject: 'Testing for you',
-      text: 'Hi, I just wanted to ask something in a long sentance, or even maybe a paragraph. I want to know how this will look on the automation email that will be sent out.'
+      from: this.contactDetails.controls['emailAddress'].value,
+      name: this.contactDetails.get('name').value,
+      subject: this.contactDetails.get('subject').value,
+      text: this.contactDetails.get('emailBody').value
     };
     return messageBody;
   }
 
   handleError = (error?: any) => {
+    this.loading = false;
     if (error instanceof HttpErrorResponse) {
-      console.log('Apparent error:', error);
-      window.alert('oops something went wrong');
+      console.log('Error: ', error);
+      this.openDialog('Failure');
     }
   }
 }
