@@ -13,6 +13,6 @@ export const ERROR_MESSAGES = {
   },
   emailBody: {
     required: 'Please enter your message',
-    pattern: 'Please enter a message'
+    pattern: 'Please enter a valid message'
   }
 };

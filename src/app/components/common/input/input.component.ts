@@ -20,7 +20,7 @@ export class InputComponent implements OnInit, AfterViewInit {
   name: string;
   value: string;
 
-  constructor(private formHelper: FormHelper, private formService: FormService) { }
+  constructor(public formHelper: FormHelper, private formService: FormService) { }
 
   ngOnInit(): void {
     this.name = 'custom-input' + uniqueId;

@@ -7,7 +7,7 @@ import { Observable, throwError } from 'rxjs';
 })
 export class ApiService {
 
-  private readonly httpsPrefix = 'http://';
+  private readonly httpsPrefix = 'https://';
   public clientSideErrorMessage = 'The request could not be processed - Client side';
 
   public config = null;
