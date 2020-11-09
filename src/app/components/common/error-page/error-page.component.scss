@@ -1,31 +1,65 @@
-mat-card {
-    box-shadow: 
-    0px 2px 1px -1px rgba(0, 0, 0, 0.2),
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important
+// .error-header-image {
+//     background-image: url('../../../../assets/icons8-speak-no-evil-monkey-48.png');
+//     background-size: cover;
+//     filter: invert(1);
+// }
+
+// .body {
+//     padding-top: 32px
+// }
+
+// #body {
+//     padding-bottom: 0px !important;
+//     width: 50%;
+//     display: flex;
+// }
+
+// .describe {
+//     margin: 24px 48px 24px 48px;
+// }
+
+// .card {
+//     flex: auto;
+//     height: auto;
+//     border-radius: 4px;
+//     box-shadow: none !important;
+// }
+
+// mat-card {
+//     width: 50vw;
+// }
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import '../../../styles/variables.scss';
+
+.error-header-image {
+    background-image: url('../../../../assets/icons8-speak-no-evil-monkey-48.png');
+    background-size: cover;
 }
 
-mat-card:hover {
-    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8) !important;
-}
-  
 .container {
-    max-width: none;
-    justify-content: space-evenly;
-    padding-top: 32px;
+    width: 75%;
 }
 
-#header {
-    // background-color: #f1f1f1;
-    // background-image: url("../../../../assets/techyBoy.png");
-    padding: 50px 10px;
-    // color: black;
-    color: white;
+.body {
+    padding-top: 32px
+}
+
+.gareth {
     text-align: center;
-    font-size: 90px; 
-    font-weight: bold;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: 0.2s;
-  }
+    width: 40%;
+}
+
+.describe {
+    margin: 24px 48px 24px 48px;
+}
+
+.card {
+    flex: auto;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: none !important;
+}
+
+a {
+    color: #4285f4;
+}

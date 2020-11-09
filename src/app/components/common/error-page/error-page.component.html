@@ -1,26 +1,43 @@
-<div id="header">Header</div>
-
-<!-- <div class="container">
-    <mat-card>
+<div id="container">
+  <div class="body" id="body">
+    <div class="container">
+      <mat-card *ngIf="isSupported === 'true'" class="card card-body describe">
         <mat-card-header>
+          <div mat-card-avatar class="error-header-image"></div>
           <mat-card-title>Oops something went wrong...</mat-card-title>
           <mat-card-subtitle>We're all human, even I make mistakes sometimes too!</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>
             This is really embarassing. Sorry about this.
-            Click back to go back! 
+            Click back to go back!
           </p>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button (click)="goBack(true)">Back</button>
-          <button mat-button (click)="goBack(false)">Home</button>
+          <button mat-raised-button color="primary" (click)="goBack(true)">Back</button>
+          <button mat-raised-button color="primary" (click)="goBack(false)">Home</button>
         </mat-card-actions>
       </mat-card>
-</div> -->
-<div style="margin-top:200px;padding:15px 15px 2500px;font-size:30px">
-  <p><b>This example demonstrates how to shrink a header when the user starts to scroll the page.</b></p>
-  <p>Scroll down this frame to see the effect!</p>
-  <p>Scroll to the top to remove the effect.</p>
-  <p>Lorem ipsum dolor dummy text sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <mat-card *ngIf="isSupported === 'false'" class="card card-body describe">
+        <mat-card-header>
+          <div mat-card-avatar class="error-header-image"></div>
+          <mat-card-title>Incompatability error!</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            From the anouncement from Microsoft on the 17th August 2020 Internet Explorer will no longer
+            be a supported browser. You can read more about this <a
+              href='https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666'>here</a>.
+            If you wish to continue to view this portfolio please use different browser, below are links
+            to some examples of browsers that are compatable with this portfolio:
+          </p>
+          <ul>
+            <li><a href='https://www.microsoft.com/en-us/edge'>Microsoft Edge</a></li>
+            <li><a href='https://www.mozilla.org/en-GB/exp/firefox/new/'>Mozilla Firefox</a></li>
+            <li><a href='https://www.google.com/intl/en_uk/chrome/'>Google Chrome</a></li>
+          </ul>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
 </div>

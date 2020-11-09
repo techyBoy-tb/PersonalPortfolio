@@ -7,10 +7,14 @@
     margin: 24px 48px 24px 48px;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .skillList {
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     justify-content: center;
 }
 

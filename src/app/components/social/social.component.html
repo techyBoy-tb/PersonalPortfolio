@@ -1,9 +1,8 @@
 <div id="container">
     <app-header></app-header>
     <div class="body" id="body">
-        <h2>Social media</h2>
         <div class="container">
-            <mat-card class="card card-body describe modal">
+            <mat-card class="card card-body describe">
                 <mat-card-header>
                     <div mat-card-avatar class="linkedin-header-image"></div>
                     <mat-card-title>Linkedin</mat-card-title>
@@ -11,12 +10,13 @@
                 </mat-card-header>
                 <mat-card-content>
                     <p>
-                    Feel free to have a browse and if you know me and have worked with me. help yourself to endorse my skills :)
-                    Any enquiries please use the contact me section.
+                        Feel free to have a browse and if you know me and have worked with me. help yourself to endorse
+                        my skills :)
+                        Any enquiries please use the contact me section.
                     </p>
                 </mat-card-content>
                 <mat-card-actions>
-                  <button mat-button (click)="openDialog('LinkedIn')">Go to Linkedin</button>
+                    <button mat-button (click)="openDialog('LinkedIn')">Go to Linkedin</button>
                 </mat-card-actions>
             </mat-card>
             <mat-card class="card card-body describe">
@@ -27,12 +27,12 @@
                 </mat-card-header>
                 <mat-card-content>
                     <p>
-                    Help yourself to take a peak at some of my previous projects.
-                    Please remember that a lot of these projects were me learning how to code from scratch!
+                        Help yourself to take a peak at some of my previous projects.
+                        Please remember that a lot of these projects were me learning how to code from scratch!
                     </p>
                 </mat-card-content>
                 <mat-card-actions>
-                  <button mat-button (click)="openDialog('Github')">Go to Github</button>
+                    <button mat-button (click)="openDialog('Github')">Go to Github</button>
                 </mat-card-actions>
             </mat-card>
         </div>

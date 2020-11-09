@@ -58,4 +58,26 @@ export class ProjectsComponent {
       source: '../../../assets/portfolio/contact3.png'
     },
   ];
+
+  jonoImages = [
+    {
+      name: 'Image one',
+      source: '../../../assets/jono/jonoBio.png'
+    },
+    {
+      name: 'Image two',
+      source: '../../../assets/jono/jonoBooks.png'
+    },
+    {
+      name: 'Image three',
+      source: '../../../assets/jono/jonoSocial.png'
+    },
+  ];
+
+  eformsImages = [
+    {
+      name: 'Coming soon',
+      source: '../../../assets/comingSoon.jpg'
+    }
+  ];
 }

@@ -5,7 +5,7 @@ import { fader } from './routing/route-animatons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  animations: [ fader ]
+  animations: [fader]
 })
 export class AppComponent {
   title = 'techyBoy';

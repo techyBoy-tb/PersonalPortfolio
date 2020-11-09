@@ -7,6 +7,7 @@
   <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Jaldi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,23 +17,39 @@
 
   <link rel="stylesheet"
     href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="/__/firebase/7.19.0/firebase-app.js"></script>
-
-  <!-- TODO: Add SDKs for Firebase products that you want to use
-      https://firebase.google.com/docs/web/setup#available-libraries -->
   <script src="/__/firebase/7.19.0/firebase-analytics.js"></script>
-
   <!-- Initialize Firebase -->
   <script src="/__/firebase/init.js"></script>
 
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      sessionStorage.setItem('supportedBrowser', 'true');
+      if (IECheck()) {
+        sessionStorage.setItem('supportedBrowser', 'false');
+        if (window.location.href.includes('error')) { return; }
+        window.location.href += 'error';
+      }
+    });
+
+    function IECheck() {
+      var ua = window.navigator.userAgent;
+
+      var msie = ua.indexOf('MSIE ');
+      var ie11 = ua.indexOf('Trident');
+      return msie > 0 || ie11 > 0;
+    }
+
+  </script>
 </head>
 
 <body>
   <app-root></app-root>
+  <noscript>Please enable Javascript to view the Portfolio of Gareth Clifford | techyBoy</noscript>
 </body>
 
 </html>

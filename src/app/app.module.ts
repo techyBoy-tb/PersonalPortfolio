@@ -4,7 +4,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCarouselModule } from '@ngbmodule/material-carousel';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './components/about/about.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
@@ -18,7 +17,7 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SocialComponent } from './components/social/social.component';
-import { AppRoutingModule } from './routing/app-routing.module';
+import { RoutingModule } from './routing/routing.module';
 import { ApiService } from './service/api/api.service';
 import { FormService } from './service/form/form.service';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
@@ -43,12 +42,11 @@ import { TrackErrorDirective } from './track-error.directive';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
     FlexLayoutModule,
     CustomAngularMaterialModule,
-    MatCarouselModule.forRoot(),
     ReactiveFormsModule
   ],
   entryComponents: [

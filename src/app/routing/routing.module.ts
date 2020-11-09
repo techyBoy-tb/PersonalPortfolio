@@ -1,49 +1,49 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from '../components/home/home.component';
+import { RouterModule, Routes } from '@angular/router';
+import { AboutComponent } from '../components/about/about.component';
+import { CarouselComponent } from '../components/carousel/carousel.component';
 import { ErrorPageComponent } from '../components/common/error-page/error-page.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
-import { SocialComponent } from '../components/social/social.component';
-import { AboutComponent } from '../components/about/about.component';
+import { HomeComponent } from '../components/home/home.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
-import { CarouselComponent } from '../components/carousel/carousel.component';
+import { SocialComponent } from '../components/social/social.component';
 
 export const routes: Routes = [
   {
     path: 'error', component: ErrorPageComponent,
-    data: { animation: 'error'}
+    data: { animation: 'error' }
   },
   {
     path: '', redirectTo: '/home', pathMatch: 'full',
-    data: { animation: 'home'}
+    data: { animation: 'home' }
   },
   {
     path: 'home', component: HomeComponent,
-    data: { animation: 'home'}
+    data: { animation: 'home' }
   },
   {
     path: 'social', component: SocialComponent,
-    data: { animation: 'social'}
+    data: { animation: 'social' }
   },
   {
     path: 'contact-me', component: ContactMeComponent,
-    data: { animation: 'contact'}
+    data: { animation: 'contact' }
   },
   {
     path: 'about', component: AboutComponent,
-    data: { animation: 'about'}
+    data: { animation: 'about' }
   },
   {
     path: 'carousel', component: CarouselComponent,
-    data: { animation: 'carousel'}
+    data: { animation: 'carousel' }
   },
   {
     path: 'projects', component: ProjectsComponent,
-    data: { animation: 'projects'}
+    data: { animation: 'projects' }
   },
   {
     path: '**', component: ErrorPageComponent,
-    data: { animation: 'error'}
+    data: { animation: 'error' }
   }
 ];
 
@@ -51,4 +51,4 @@ export const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class RoutingModule { }

@@ -1,8 +1,8 @@
 <div id="container">
   <app-header></app-header>
   <div class="body" id="body">
-    <h2>Let's take a look at what I can do</h2>
     <div class="container">
+      <!-- Project one - Tax calculator -->
       <mat-card class="card describe">
         <mat-card-title>
           Tax calculator
@@ -29,7 +29,7 @@
           </p>
         </mat-card-content>
       </mat-card>
-
+      <!-- Project two - Personal Portfolio -->
       <mat-card class="card describe">
         <mat-card-title>
           Personal portfolio
@@ -47,6 +47,46 @@
             I am creating this portfolio using the frontend framework Angular, for the backend
             services I am using NodeJS, and I am using Firebase to host. I have created this to
             apply the skills I have learnt to a different environment.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <!-- Project three - JonoSite -->
+      <mat-card class="card describe">
+        <mat-card-title>
+          Jono's profile
+        </mat-card-title>
+        <mat-card-subtitle>
+          Personal projects
+        </mat-card-subtitle>
+        <mat-card-content>
+          <div id="projectThreeCarousel" class="carousel">
+            <app-carousel [title]="'Project three'" [images]="jonoImages"></app-carousel>
+          </div>
+          <p>
+            I started making this portfolio for a friend of mine who needed some help promoting
+            his books. He is a young up and coming author with books published and more on the way.
+            I spoke to him about what exactly he would like to show off. I have successfully managed
+            to integrate some of his social media streams onto the page. Some other features include
+            a 'coming soon' contact me page, similar to the page hosted here. Eventually when completed
+            it will have a blog section, in which Jono himself will be able to upload info about himself
+            about the latest on his new books, like a regular blog.
+          </p>
+        </mat-card-content>
+      </mat-card>
+      <!-- Project three - San eForms -->
+      <mat-card class="card describe">
+        <mat-card-title>
+          Santander - San eForms
+        </mat-card-title>
+        <mat-card-subtitle>
+          Professional projects
+        </mat-card-subtitle>
+        <mat-card-content>
+          <div id="projectFourCarousel" class="carousel">
+            <app-carousel [title]="'Project four'" [images]="eformsImages"></app-carousel>
+          </div>
+          <p>
+            Coming soon!
           </p>
         </mat-card-content>
       </mat-card>
