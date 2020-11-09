@@ -15,7 +15,6 @@ export class ErrorPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.isSupported = sessionStorage.supportedBrowser;
-    console.log(' this.isSupported ', this.isSupported);
   }
 
   goBack(goingBack: boolean): void {

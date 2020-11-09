@@ -50,7 +50,6 @@ export class InputComponent implements OnInit, AfterViewInit {
       const error = Array.from(Object.keys(this.control.errors))[0];
       message = errorObj[error];
     }
-    console.log('error message', message);
     return message;
   }
 

@@ -23,7 +23,6 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
     { name: 'Failure', url: '../../../assets/icons8-speak-no-evil-monkey-48.png' },
   ];
   public contactDetails: FormGroup = this.formService.getContactDetails();
-
   public message = {};
 
   constructor(public apiService: ApiService, public dialog: MatDialog, private formService: FormService) { }
@@ -36,7 +35,7 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
   }
 
   submit() {
-    console.log('Submit has been called');
+    if (!this.contactDetails.valid) { this.contactDetails.markAllAsTouched(); return; }
     this.loading = true;
     this.process = this.processes.submit;
     this.apiService.submitEmail(this.createObject()).subscribe(() => {
