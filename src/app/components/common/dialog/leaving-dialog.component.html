@@ -7,6 +7,6 @@
   </p>
 </mat-dialog-content>
 <mat-dialog-actions>
-  <button class="mat-raised-button" (click)="close()">Back to portfolio</button>
-  <button class="mat-raised-button" (click)="goToLink()">Take me to {{socialMedia}}</button>
+  <button mat-raised-button color="primary" (click)="close()">Back to portfolio</button>
+  <button mat-raised-button class="warning" (click)="goToLink()">Take me to {{socialMedia}}</button>
 </mat-dialog-actions>

@@ -55,7 +55,7 @@ textarea:valid ~ label {
 
   & input,
   & textarea {
-    border-color: red !important;
+    border-color: $lightred !important;
     background-color: transparent !important;
     margin-bottom: -16px;
     &:focus {
@@ -71,14 +71,14 @@ textarea:valid ~ label {
   & input:valid ~ label,
   & textarea:focus ~ label,
   & textarea:valid ~ label {
-     color: red;
+     color: $lightred;
   }
 }
 
 .errorDirective_error,
 .error {
   font-weight: normal;
-  color: red;
+  color: $lightred;
   // display: none;
   position: inherit;
 }

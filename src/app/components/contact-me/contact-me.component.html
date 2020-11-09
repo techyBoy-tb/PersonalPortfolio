@@ -19,8 +19,9 @@
                             [control]="contactDetails.get('emailBody')"></app-input>
                     </mat-card-content>
                 </form>
-
-                <button mat-flat-button color="primary" id="submit" (click)="submit()">Submit</button>
+                <mat-card-actions>
+                    <button mat-raised-button color="primary" id="submit" (click)="submit()">Submit</button>
+                </mat-card-actions>
             </mat-card>
         </div>
         <div *ngIf="loading" class="submit-modal">
