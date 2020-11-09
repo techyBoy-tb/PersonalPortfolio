@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ErrorPageComponent implements OnInit {
 
-  isSupported: Boolean;
+  isSupported;
 
   constructor(private _location: Location, private router: Router) { }
 
