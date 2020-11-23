@@ -4,6 +4,7 @@ import { FormGroup } from '@angular/forms';
 import { ThemePalette } from '@angular/material/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
 import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
+import { timer } from 'rxjs';
 import { ApiService } from 'src/app/service/api/api.service';
 import { FormService } from 'src/app/service/form/form.service';
 import { StatusDialogComponent } from '../common/status-dialog/status-dialog.component';
