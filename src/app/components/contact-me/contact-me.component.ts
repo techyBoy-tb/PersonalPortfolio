@@ -84,7 +84,7 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
   handleError = (error?: any) => {
     this.loading = false;
     if (error instanceof HttpErrorResponse) {
-      console.log('Error: ', error);
+      console.error(error);
       this.openDialog('Failure');
     }
   }
