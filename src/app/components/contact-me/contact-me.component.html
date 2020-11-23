@@ -27,7 +27,8 @@
         <div *ngIf="loading" class="submit-modal">
             <div class="s-card">
                 <h1 tabindex="0" class="s-card--title">We're {{process}} your request</h1>
-                <span class="spinner"></span>
+                <mat-progress-spinner class="spinner" [color]="color" [mode]="mode">
+                </mat-progress-spinner>
                 <p tabindex="0" class="body-title">Your details can take up to 30 seconds to process</p>
                 <p tabindex="0">Depending on your internet connection it may take longer. Don't close this window or
                     refresh</p>

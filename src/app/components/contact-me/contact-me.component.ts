@@ -1,7 +1,9 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { ThemePalette } from '@angular/material/core';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
+import { ProgressSpinnerMode } from '@angular/material/progress-spinner';
 import { ApiService } from 'src/app/service/api/api.service';
 import { FormService } from 'src/app/service/form/form.service';
 import { StatusDialogComponent } from '../common/status-dialog/status-dialog.component';
@@ -24,7 +26,8 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
   ];
   public contactDetails: FormGroup = this.formService.getContactDetails();
   public message = {};
-
+  color: ThemePalette = 'primary';
+  mode: ProgressSpinnerMode = 'indeterminate';
   constructor(public apiService: ApiService, public dialog: MatDialog, private formService: FormService) { }
 
   ngOnInit(): void {
@@ -36,12 +39,23 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
 
   submit() {
     if (!this.contactDetails.valid) { this.contactDetails.markAllAsTouched(); return; }
+    // this.mockSubmit('Success');
+    // this.mockSubmit('Failue');
     this.loading = true;
     this.process = this.processes.submit;
     this.apiService.submitEmail(this.createObject()).subscribe(() => {
       this.loading = false;
       this.openDialog('Success');
     }, this.handleError);
+  }
+
+  mockSubmit(status: string) {
+    this.loading = true;
+    this.process = this.processes.submit;
+    timer(5000).subscribe(_ => {
+      this.loading = false;
+      this.openDialog(status);
+    });
   }
 
   openDialog(status: string) {
