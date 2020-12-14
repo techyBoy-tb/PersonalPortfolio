@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
+import { CarouselComponent } from '../carousel/carousel.component';
+import { FooterComponent } from '../common/layout/footer/footer.component';
+import { HeaderComponent } from '../common/layout/header/header.component';
 import { ProjectsComponent } from './projects.component';
+
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -8,9 +12,15 @@ describe('ProjectsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProjectsComponent ]
+      declarations: [
+        ProjectsComponent,
+        HeaderComponent,
+        FooterComponent,
+        CarouselComponent
+      ],
+      imports: [CustomAngularMaterialModule]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -19,7 +29,7 @@ describe('ProjectsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

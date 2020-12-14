@@ -10,10 +10,10 @@ describe('ErrorPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [ RouterTestingModule, CustomAngularMaterialModule ],
-      declarations: [ ErrorPageComponent ]
+      imports: [RouterTestingModule, CustomAngularMaterialModule],
+      declarations: [ErrorPageComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('ErrorPageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

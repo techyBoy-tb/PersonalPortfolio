@@ -1,25 +1,36 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+import { CustomAngularMaterialModule } from 'src/app/shared/angular-material.module';
+import { FormHelper } from 'src/app/util/form-helper';
 import { InputComponent } from './input.component';
+
 
 describe('InputComponent', () => {
   let component: InputComponent;
   let fixture: ComponentFixture<InputComponent>;
+  let formBuilder: FormBuilder;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ InputComponent ]
-    })
-    .compileComponents();
+      declarations: [InputComponent],
+      imports: [
+        CustomAngularMaterialModule,
+        ReactiveFormsModule
+      ],
+      providers: [
+        FormHelper
+      ]
+    }).compileComponents().then(() => {
+      fixture = TestBed.createComponent(InputComponent);
+      component = fixture.componentInstance;
+      formBuilder = TestBed.inject(FormBuilder);
+      component.control = formBuilder.control('');
+      component.control.setParent(formBuilder.group({ unspecified: component.control }));
+      fixture.detectChanges();
+    });
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(InputComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
+  test('should create', () => {
     expect(component).toBeTruthy();
   });
 });

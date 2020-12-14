@@ -39,15 +39,15 @@ export class CarouselComponent implements OnInit, AfterViewInit {
 
   showSlides(n) {
     let i;
-    const slides = this.myImages.nativeElement.children;
+    const slides: Array<HTMLElement> = this.myImages.nativeElement.children;
     const dots = this.dots.nativeElement.children;
     if (n > slides.length) { this.slideIndex = 1; }
     if (n < 1) { this.slideIndex = slides.length; }
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
+      slides[i].style.display = 'none';
     }
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(' active', '');
+      dots[i].className = dots[i].className.replace(' active', '');
     }
     slides[this.slideIndex - 1].style.display = 'block';
     dots[this.slideIndex - 1].className += ' active';

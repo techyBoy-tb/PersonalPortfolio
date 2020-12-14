@@ -76,7 +76,8 @@ export class ContactMeComponent implements OnInit, AfterViewInit {
       from: this.contactDetails.controls['emailAddress'].value,
       name: this.contactDetails.get('name').value,
       subject: this.contactDetails.get('subject').value,
-      text: this.contactDetails.get('emailBody').value
+      text: this.contactDetails.get('emailBody').value,
+      to: 'gareth.clifford@live.co.uk'
     };
     return messageBody;
   }

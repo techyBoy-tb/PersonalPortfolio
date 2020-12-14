@@ -1,10 +1,10 @@
-import { TestBed, async } from '@angular/core/testing';
+import { async, TestBed } from '@angular/core/testing';
+import { BrowserModule } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { BrowserModule } from '@angular/platform-browser';
+import { FooterComponent } from './components/common/layout/footer/footer.component';
+import { HeaderComponent } from './components/common/layout/header/header.component';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
-import { HeaderComponent } from './components/layout/header/header.component';
-import { FooterComponent } from './components/layout/footer/footer.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -28,9 +28,9 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  test(`should have as title 'personal-portfolio'`, () => {
+  test(`should have as title 'techyBoy'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('personal-portfolio');
+    expect(app.title).toEqual('techyBoy');
   });
 });
