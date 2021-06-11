@@ -4,6 +4,7 @@ import { AboutComponent } from '../components/about/about.component';
 import { CarouselComponent } from '../components/carousel/carousel.component';
 import { ErrorPageComponent } from '../components/common/error-page/error-page.component';
 import { ContactMeComponent } from '../components/contact-me/contact-me.component';
+import { CvComponent } from '../components/cv/cv.component';
 import { HomeComponent } from '../components/home/home.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { SocialComponent } from '../components/social/social.component';
@@ -40,6 +41,10 @@ export const routes: Routes = [
   {
     path: 'projects', component: ProjectsComponent,
     data: { animation: 'projects' }
+  },
+  {
+    path: 'cv', component: CvComponent,
+    data: { animation: 'cv' }
   },
   {
     path: '**', component: ErrorPageComponent,

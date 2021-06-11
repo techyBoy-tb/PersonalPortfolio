@@ -14,6 +14,7 @@ import { FooterComponent } from './components/common/layout/footer/footer.compon
 import { HeaderComponent } from './components/common/layout/header/header.component';
 import { StatusDialogComponent } from './components/common/status-dialog/status-dialog.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
+import { CvComponent } from './components/cv/cv.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SocialComponent } from './components/social/social.component';
@@ -21,7 +22,6 @@ import { RoutingModule } from './routing/routing.module';
 import { ApiService } from './service/api/api.service';
 import { FormService } from './service/form/form.service';
 import { CustomAngularMaterialModule } from './shared/angular-material.module';
-import { TrackErrorDirective } from './track-error.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,7 @@ import { TrackErrorDirective } from './track-error.directive';
     CarouselComponent,
     InputComponent,
     StatusDialogComponent,
-    TrackErrorDirective
+    CvComponent,
   ],
   imports: [
     BrowserModule,
