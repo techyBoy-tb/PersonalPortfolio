@@ -1,11 +1,5 @@
 import {
-    trigger,
-    transition,
-    style,
-    query,
-    animateChild,
-    animate,
-    keyframes,
+  animate, query, style, transition, trigger
 } from '@angular/animations';
 
 // Basic
@@ -24,7 +18,7 @@ export const fader =
       ], { optional: true }),
       // Animate the new page in
       query(':enter', [
-        animate('600ms ease', style({ opacity: 1, transform: 'scale(1) translateX(0)' })),
-      ], { optional: true })
+        animate('1000ms ease', style({ opacity: 1, transform: 'scale(1) translateX(0)' })),
+      ], { optional: true }),
     ]),
 ]);

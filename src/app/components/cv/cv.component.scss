@@ -1,10 +1,50 @@
 @import "../../styles/variables.scss";
 
+* {
+  transition: all 1s ease-in-out !important;
+  -webkit-transition: all 1s ease-in-out !important;
+}
 a {
   color: white;
   text-decoration: none;
 }
+
+.cvDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .cvIframe {
-  width: 90%;
-  height: 80%;
+  width: 65%;
+  height: 85vh;
+}
+
+.downloadInfo {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  button {
+    outline: inset;
+    margin: 16px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .downloadInfo {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    a {
+      text-align: center;
+    }
+    p {
+      margin-bottom: 0;
+    }
+    .cvIframe {
+      width: 90%;
+      height: 85vh;
+    }
+  }
+  
 }

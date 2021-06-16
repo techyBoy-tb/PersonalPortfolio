@@ -1,12 +1,17 @@
 <div id="container">
   <app-header></app-header>
   <div class="body" id="body">
-    <a target="_blank" href='https://firebasestorage.googleapis.com/v0/b/personal-portfolio-25b96.appspot.com/o/10737813-BAG12523814-e-Voucher.pdf?alt=media&token=aeee7cfb-850d-4b02-b06f-83860de07d6a'>
-      <button id="cvBtn" mat-button  class="menu-button">Download</button>
-      <div>
-        <iframe class="cvIframe" src="https://firebasestorage.googleapis.com/v0/b/personal-portfolio-25b96.appspot.com/o/10737813-BAG12523814-e-Voucher.pdf?alt=media&token=aeee7cfb-850d-4b02-b06f-83860de07d6a#toolbar=0"></iframe>
+    <div class="cvDiv" >
+      <div class="downloadInfo">
+        <p>
+          Want a copy for yourself? 
+        </p>
+        <a target="_blank" class="downloadBtn" href='https://firebasestorage.googleapis.com/v0/b/personal-portfolio-25b96.appspot.com/o/Gareth%20Clifford%20CV%20-%202021.pdf?alt=media&token=48cd548b-f25b-404f-bd9d-2b150e2339e5'>
+          <button id="cvBtn" mat-button  class="menu-button">Download</button>
+        </a>
       </div>
-    </a>
+      <iframe class="cvIframe" id="iframe" src="https://firebasestorage.googleapis.com/v0/b/personal-portfolio-25b96.appspot.com/o/Gareth%20Clifford%20CV%20-%202021.pdf?alt=media&token=48cd548b-f25b-404f-bd9d-2b150e2339e5#toolbar=0"></iframe>
+    </div>
   </div>
   <app-footer></app-footer>
 </div>
